@@ -1,0 +1,10 @@
+E:\AllProject\Store\WebStore\Store\Store.Domain\bin\Debug\Store.Domain.dll.config
+E:\AllProject\Store\WebStore\Store\Store.Domain\bin\Debug\Store.Domain.dll
+E:\AllProject\Store\WebStore\Store\Store.Domain\bin\Debug\Store.Domain.pdb
+E:\AllProject\Store\WebStore\Store\Store.Domain\bin\Debug\EntityFramework.dll
+E:\AllProject\Store\WebStore\Store\Store.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\AllProject\Store\WebStore\Store\Store.Domain\bin\Debug\EntityFramework.xml
+E:\AllProject\Store\WebStore\Store\Store.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\AllProject\Store\WebStore\Store\Store.Domain\obj\Debug\Store.Domain.csprojResolveAssemblyReference.cache
+E:\AllProject\Store\WebStore\Store\Store.Domain\obj\Debug\Store.Domain.dll
+E:\AllProject\Store\WebStore\Store\Store.Domain\obj\Debug\Store.Domain.pdb

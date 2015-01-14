@@ -1,0 +1,17 @@
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\obj\Debug\Store.UnitTest.csprojResolveAssemblyReference.cache
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Store.UnitTest.dll
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Store.UnitTest.pdb
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Moq.dll
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Ninject.dll
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Store.Domain.dll
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Store.WebUI.dll
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\EntityFramework.dll
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\System.Web.Optimization.dll
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Newtonsoft.Json.dll
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Store.Domain.pdb
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Store.WebUI.pdb
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Moq.xml
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\Ninject.xml
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\bin\Debug\EntityFramework.xml
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\obj\Debug\Store.UnitTest.dll
+E:\AllProject\Store\WebStore\Store\Store.UnitTest\obj\Debug\Store.UnitTest.pdb

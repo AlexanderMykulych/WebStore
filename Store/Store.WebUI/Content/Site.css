@@ -1,8 +1,9 @@
 ﻿body {
     font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-family: Cambria, Georgia, "Times New Roman";
+    margin: 0;
     color: #232323;
-    background-color: #fff;
+    background-color: #fee;
 }
 
 header, footer, nav, section {
@@ -58,4 +59,37 @@ textarea {
 
 .validation-summary-valid {
     display: none;
+}
+
+#header {
+    display: inline;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    position: relative;
+    float: left;
+    background-color: #808080;
+    box-shadow: 0 0 0 2px #000000;
+    background-image: linear-gradient(#ff0000, #ffd800);
+    border-radius: 40%;
+}
+
+.link {
+    display: block;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 8px;
+    color: #333;
+    box-shadow: 
+        inset 0 2px 0 rgba(0,0,0,.2), 
+        0 0 4px rgba(0,0,0,0.1);
+}
+
+.link:focus
+{
+    outline: none;
+    box-shadow: 
+        inset 0 2px 0 rgba(0,0,0,.2), 
+        0 0 4px rgba(0,0,0,0.1), 
+        0 0 5px 1px #51CBEE;
 }

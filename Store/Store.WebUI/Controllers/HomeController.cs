@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Store.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,11 +9,16 @@ namespace Store.WebUI.Controllers
 {
     public class HomeController : Controller
     {
+        IProductRepository repository;
+        public HomeController(IProductRepository repoParam)
+        {
+            repository = repoParam;
+        }
         //
-        // GET: /Home/
-
+        // GET: /Home/        
         public ActionResult Index()
         {
+            
             return View();
         }
 

@@ -6,8 +6,18 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+    <div id="header">
+        <div class="title">
+            Web Store
+        </div>
+
+
+    </div>
+    <br />
+    <input type="text" class="link" />
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")

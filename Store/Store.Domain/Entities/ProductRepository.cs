@@ -15,7 +15,7 @@ namespace Store.Domain.Entities
         {
             get
             {
-                return context.Table;
+                return context.Products;
             }
         }
  

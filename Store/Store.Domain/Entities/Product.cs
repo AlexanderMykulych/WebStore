@@ -16,6 +16,6 @@ namespace Store.Domain.Entities
         public int Count { get; set; }
         public byte[] ImageData { get; set; }
 
-        public string ImageMimeType {get; set; }
+        public string ImageMimeType { get; set; }
     }
 }

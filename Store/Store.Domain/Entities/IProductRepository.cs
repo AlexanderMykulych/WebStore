@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Store.Domain.Entities
 {
-    interface IProductRepository
+    public interface IProductRepository
     {
         IQueryable<Product> Products { get; }
     }

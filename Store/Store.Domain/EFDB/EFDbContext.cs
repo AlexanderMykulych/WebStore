@@ -10,6 +10,6 @@ namespace Store.Domain.EFDB
 {
     public class EFDbContext : DbContext
     {
-        public DbSet<Product> Table;
+        public DbSet<Product> Products { get; set; }
     }
 }
