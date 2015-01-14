@@ -8,5 +8,6 @@ namespace Store.Domain.Entities
 {
     interface IProductRepository
     {
+        IQueryable<Product> Products { get; }
     }
 }
