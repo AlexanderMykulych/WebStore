@@ -13,14 +13,14 @@
         <div class="title">
             Web Store
         </div>
-
-
     </div>
-    <br />
-    <input type="text" class="link" />
-    @RenderBody()
 
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+    <div id="categories">
+        @{Html.RenderAction("Menu", "Home");}
+    </div>
+
+    <div id="content">
+        @RenderBody()
+    </div>
 </body>
 </html>

@@ -1,0 +1,8 @@
+﻿@model IEnumerable<string>
+
+@Html.ActionLink("Home page", "Index", "Home", null, new { @class = "tab" })
+
+@foreach(var item in Model)
+{
+    @Html.ActionLink(item, "Index", "Home", new { categories = item }, new { @class = "tab" })
+}

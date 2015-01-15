@@ -62,34 +62,52 @@ textarea {
 }
 
 #header {
-    display: inline;
-    width: 120px;
-    height: 120px;
-    margin: 20px;
-    position: relative;
-    float: left;
-    background-color: #808080;
-    box-shadow: 0 0 0 2px #000000;
-    background-image: linear-gradient(#ff0000, #ffd800);
-    border-radius: 40%;
+    border-bottom: 4px solid #808080;
+    background-color: #242020;
+    padding: 5px 5px 5px 5px;
 }
 
-.link {
-    display: block;
-    border: none;
-    border-radius: 20px;
-    padding: 5px 8px;
-    color: #333;
-    box-shadow: 
-        inset 0 2px 0 rgba(0,0,0,.2), 
-        0 0 4px rgba(0,0,0,0.1);
+.title {
+    color: white;
+    font-size: 40px;
+    height: 100px;
 }
 
-.link:focus
-{
-    outline: none;
-    box-shadow: 
-        inset 0 2px 0 rgba(0,0,0,.2), 
-        0 0 4px rgba(0,0,0,0.1), 
-        0 0 5px 1px #51CBEE;
+#categories {
+    float:left;
+    width: 8em;
+    padding: .3em;
+    margin: 10px;
+}
+
+
+
+.tab{
+      float: left;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      user-select: none;
+      padding: .5em 2em;
+      outline: none;
+      border: 2px solid;
+      border-radius: 1px;
+      transition: 0.2s;
+      background-color: #242020;
+}
+.tab:hover{
+    background-color: #fa3838;
+    cursor: pointer;
+    user-select: none;
+}
+.tab:active{
+    background-color: #ff7a7a;
+    box-shadow: 0 3px rgb(33, 147, 90) inset;
+    user-select: none;
+}
+
+#content {
+    margin-left: 10em;
+    border-left: 2px solid #808080;
+    padding: 5px;
 }

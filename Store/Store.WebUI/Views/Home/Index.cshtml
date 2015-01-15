@@ -1,11 +1,14 @@
-﻿
+﻿@model Store.WebUI.Models.ViewModelIndex
 @{
     ViewBag.Title = "Home page";
     
 }
 
 <div>
-    This is text from "index" 
+    @foreach(var product in Model.product)
+    {
+       
+    }
 </div>
     
 
