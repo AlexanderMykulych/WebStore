@@ -21,7 +21,7 @@ namespace Store.WebUI.Controllers
         public ActionResult Index(string categories, int pageId)
         {
             var Product = repository.Products
-                                    .Where(x => x.Category == categories);
+                                    .Where(x => x.Category != null);
             var PageInfo = new ProductPageInfo() 
                                 {
                                     TotalItems = Product.Count(),
