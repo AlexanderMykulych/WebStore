@@ -18,7 +18,7 @@ namespace Store.WebUI.Controllers
         }
         //
         // GET: /Home/        
-        public ActionResult Index(string categories = null, int pageId = 1)
+        public ActionResult Index(string categories = "All", int pageId = 1)
         {
             var Product = categories == "All" ? repository.Products : repository.Products
                                                                                 .Where(x => x.Category == categories);
@@ -44,7 +44,7 @@ namespace Store.WebUI.Controllers
                             });
         }
 
-        public PartialViewResult Menu(string categories = null)
+        public PartialViewResult Menu(string categories = "All")
         {
             ViewBag.SelectedCategory = categories;
 

@@ -1,8 +1,31 @@
 ﻿@model IEnumerable<string>
 
-@Html.ActionLink("Home page", "Index", "Home", null, new { @class = "tab" })
+@{
+    string curClass = null;
+}
+
+
+@if(ViewBag.SelectedCategory == "All")
+{
+    curClass = "tab selected";
+    
+}
+else
+{
+    curClass = "tab";
+}
+    @Html.ActionLink("All", "Index", "Home", null, new { @class = curClass})
 
 @foreach(var item in Model)
 {
-    @Html.ActionLink(item, "Index", "Home", new { categories = item }, new { @class = "tab" })
+    if (ViewBag.SelectedCategory == item)
+    {
+        curClass = "tab selected";
+
+    }
+    else
+    {
+        curClass = "tab";
+    }
+    @Html.ActionLink(item, "Index", "Home", new { categories = item }, new { @class = curClass });
 }
