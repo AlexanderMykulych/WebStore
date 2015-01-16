@@ -7,7 +7,16 @@
 <div>
     @foreach(var product in Model.product)
     {
-       
+       <div>
+           @product.Name
+       </div>
+    }
+    @for(int i = 1;  i <= Model.pageInfo.TotalPage; i++)
+    {
+        <div class="pager">
+            @Html.ActionLink(i.ToString(), "Index", "Home",
+                                new { categories = Model.pageInfo.CurrentCategory, pageId = i }, null)
+        </div>
     }
 </div>
     

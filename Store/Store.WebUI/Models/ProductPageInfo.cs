@@ -19,6 +19,6 @@ namespace Store.WebUI.Models
             }
         }
 
-
+        public string CurrentCategory;
     }
 }

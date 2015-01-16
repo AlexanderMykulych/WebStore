@@ -11,22 +11,30 @@ namespace Store.WebUI.Controllers
     public class HomeController : Controller
     {
         IProductRepository repository;
-        int ItemsInPage = 4;
+        int ItemsInPage = 3;
         public HomeController(IProductRepository repoParam)
         {
             repository = repoParam;
         }
         //
         // GET: /Home/        
-        public ActionResult Index(string categories, int pageId)
+        public ActionResult Index(string categories = null, int pageId = 1)
         {
-            var Product = repository.Products
-                                    .Where(x => x.Category != null);
+            var Product = categories == "All" ? repository.Products : repository.Products
+                                                                                .Where(x => x.Category == categories);
+
+            int CountItemInPage = Product.Count();
+            Product = Product
+                            .OrderBy(x => x.Id)
+                            .Skip((pageId - 1) * ItemsInPage)
+                            .Take(ItemsInPage);
+                                                                                
             var PageInfo = new ProductPageInfo() 
                                 {
-                                    TotalItems = Product.Count(),
+                                    TotalItems = CountItemInPage,
                                     ItemsInPage = this.ItemsInPage,
-                                    CurrentPage = pageId
+                                    CurrentPage = pageId,
+                                    CurrentCategory = categories
                                 };
 
             return View(new ViewModelIndex() 
