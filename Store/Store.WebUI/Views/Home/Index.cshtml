@@ -5,12 +5,11 @@
 }
 
 <div>
-    @foreach(var product in Model.product)
-    {
-       <div>
-           @product.Name
-       </div>
-    }
+    @{
+        Html.RenderAction("Items", "Product", new { category = Model.pageInfo.CurrentCategory,
+                                                    start = (Model.pageInfo.CurrentPage-1) * Model.pageInfo.ItemsInPage,
+                                                    count = Model.pageInfo.ItemsInPage});
+     }
     @for(int i = 1;  i <= Model.pageInfo.TotalPage; i++)
     {
         <div class="pager">

@@ -1,1 +1,14 @@
-﻿
+﻿@model IEnumerable<Store.Domain.Entities.Product>
+
+<div id="Products">
+    @foreach (var product in Model)
+    {
+        <div class="productBox">
+            <div class="Name">@product.Name</div>
+            @*<div class="Price">@product.Price</div>
+            <div class="IsPresence">@product.IsPresence</div>
+            <div class="Count">@product.Count</div>
+            <div class="Description">@product.Description</div>*@
+        </div>
+    }
+</div>
