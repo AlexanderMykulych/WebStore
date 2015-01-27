@@ -5,10 +5,30 @@
     {
         <div class="productBox">
             <div class="Name">@product.Name</div>
-            @*<div class="Price">@product.Price</div>
-            <div class="IsPresence">@product.IsPresence</div>
-            <div class="Count">@product.Count</div>
-            <div class="Description">@product.Description</div>*@
+            <div style="margin: 5px;">
+                Ціна:
+                <div class="Price">@product.Price</div>
+            </div>
+            <div class="Info">
+                    
+                <div>
+                Наявність: 
+                    @if (product.IsPresence)
+                    {
+                        <text>Так;</text>
+                    }
+                    else
+                    {
+                        <text>Ні;</text>
+                    }
+                </div>
+                <div>Кількість: @product.Count</div>
+                
+            </div>
+            <div class="button">
+                <a href="/">Покласти в корзину</a>
+            </div>
+
         </div>
     }
 </div>

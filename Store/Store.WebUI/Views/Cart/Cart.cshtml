@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Store.Domain.Entities.Product>
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Count</th>
+        <th>Total Price</th>
+    </tr>
+    @foreach(var product in Model)
+    {
+        <tr>
+            <td>@product.Name</td>
+            <td>@product.Price.ToString("c")</td>
+            <td>@product.Count.ToString()</td>
+            <td>@{
+                    decimal TotalPrice = product.Count * product.Price;
+                    <text>@TotalPrice.ToString("c")</text>
+                 }
+            </td>
+        </tr>
+    }
+</table>

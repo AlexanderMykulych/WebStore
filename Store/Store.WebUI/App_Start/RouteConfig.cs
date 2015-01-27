@@ -12,7 +12,10 @@ namespace Store.WebUI
         public static void RegisterRoutes(RouteCollection routes)
         {
 
-            
+            routes.MapRoute(
+                "CartRoute",
+                "Order/{id}",
+                new { controller = "Cart", action = "Cart", id = -1});
 
             routes.MapRoute(
                 name: "Default",

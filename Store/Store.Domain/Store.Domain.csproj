@@ -51,6 +51,7 @@
     <Compile Include="Entities\IProductRepository.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ProductRepository.cs" />
+    <Compile Include="Order\Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

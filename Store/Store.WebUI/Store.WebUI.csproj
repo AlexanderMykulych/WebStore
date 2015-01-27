@@ -136,6 +136,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="DependencyInjection\NinjectControllerFactory.cs" />
@@ -235,6 +236,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Menu.cshtml" />
     <Content Include="Views\Product\Items.cshtml" />
+    <Content Include="Views\Cart\Cart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

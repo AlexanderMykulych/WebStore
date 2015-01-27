@@ -82,6 +82,7 @@ textarea {
 
 
 
+
 .tab{
       float: left;
       color: white;
@@ -132,4 +133,61 @@ textarea {
     color: white;
     
     
+}
+
+#Products{
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
+.productBox{
+    display: inline-block;
+    height: 100px;
+    margin: 10px 20px 0 0;
+    border:  3px solid green;
+    padding: 10px 10px 45px 10px;
+    border-radius: 30px 10px;
+    background-color: #f2f89a;
+    box-shadow: 5px 5px 15px 2px;
+    cursor: pointer;    
+}
+
+.productBox:hover{
+    box-shadow: 5px 5px 15px 2px rgba(61, 13, 13, 0.85);
+}
+
+.Name{
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+.Price{
+    display: inline-block;
+    background-color: gold;
+    border-radius: 5px 5px;
+    padding:5px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px 1px;
+}
+
+.Info{
+    display: inline-block;
+
+}
+
+.button{
+    display:block;
+    background-color: #010a30;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    margin-top: 5px;
+    border-radius: 0 0 15px 0;
+}
+
+.button > a{
+    text-decoration: none;
+    color:white;
 }
